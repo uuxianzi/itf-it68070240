@@ -1,0 +1,25 @@
+.a {
+    background-color:lavenderblush;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    grid-template-columns: 50% 50%;
+}
+.text{
+    font-size: 20px;
+    font-weight: 100;
+}
+.b {
+    background-color: white;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
