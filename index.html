@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href="styles.css"
+    <title>หวี่อ้ายหน่อ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="a">
@@ -12,20 +12,68 @@
         <h2>ITF Website</h2>
         <p>Week 14</p>
     </nav>
+
     <div class="container"> 
-        <img src="https://tse4.mm.bing.net/th/id/OIP.Uvq17vU1USVEa8mWepcnAgHaGq?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" width="150" alt="Cool" />
+        <img src="https://th.bing.com/th/id/R.0b953362b106cfb9ec5e7e523ee08f20?rik=6H5z%2bOp1Plp4AQ&riu=http%3a%2f%2fwww.geekireland.com%2fwp-content%2fuploads%2f2014%2f08%2ftotorofg.png&ehk=1Jp242jNZnmvt%2bXK5xDfbY9eg5XTlljKSuXx%2bOaf21A%3d&risl=&pid=ImgRaw&r=0" width="150" alt="Cool" />
         <h2 id="my-title">
             ITF Simple Bank
             <p class="text">Welcome to my first HTML + CSS + JS website!</p>
         </h2>
     </div>
-    <textarea name="" id=""></textarea>
+
+    <textarea id="historyBox" rows="10" cols="50"></textarea>
+
     <div class="b">
         <h2>Account Overview</h2>
         <h2>Financial Tools</h2>
+        <h2></h2>
     </div>
+
     <div class="c">
-        <img src="https://www.pinclipart.com/picdir/big/387-3875883_png-file-svg-account-png-free-clipart.png" width="150" alt="Account" />
+        <img src="https://th.bing.com/th/id/R.ea9de26e4c5c2e4c13e5df05c612c0e3?rik=rjYjHXOuD0%2bITw&riu=http%3a%2f%2f68.media.tumblr.com%2f2b07b78486caf4a10a4bad12ba25b24c%2ftumblr_mleu6mgoMw1snmv0jo1_1280.png&ehk=rqEh3RfouX9yytbaJMJLCfF%2fX%2btpM8vmM1%2fzP6FK81k%3d&risl=&pid=ImgRaw&r=0" width="250" alt="Account" />
+        <h3>
+            Account Information
+            <p>Name: Chutikarn Sonjai</p>
+            <p>Type: BRUH Account</p>
+        </h3>
+        <img src="https://static.vecteezy.com/system/resources/previews/015/275/955/original/dollar-money-bag-with-coins-free-png.png" width="250" alt="Money" />
+        <h3>
+            Currency Converter
+            <p>Input balance: <input type="number" id="inbalance" value="0"></p>
+            <p>Output balance: <input type="number" id="outbalance" value="0"></p>
+            <p>Input currency: 
+                <select id="currencySelect">
+                    <option value="USD">THB</option>
+                    <option value="THB">USD</option>
+                </select> 
+                <button onclick="convertCurrency()">Convert</button>
+            </p>
+        </h3>
     </div>
+
+    <div class="d">
+        <img src="https://i.pinimg.com/736x/8c/0c/a2/8c0ca285a57323d193663e533f1b929e.jpg" width="270" alt="Transfer" />
+        <h3>
+            Balance Information
+            <p>Current account balance: <input type="number" id="currentacc" value="0"></p>
+            <p>Current cash balance: <input type="number" id="currentcash" value="0"></p>
+            <button onclick="updateBalance()">Change</button>
+        </h3>
+    </div>
+
+    <div class="e">
+        <img src="https://www.seekpng.com/png/full/198-1987269_studio-ghibli-png.png" width="250" alt="Pay" />
+        <h3>
+            Bank Operation
+            <select id="operationSelect">
+                <option value="Deposit">Deposit</option>
+                <option value="Withdraw">Withdraw</option>
+            </select>
+            <input type="number" id="ha" value="0">
+            <button onclick="proceedOperation()">Proceed</button>
+        </h3>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
